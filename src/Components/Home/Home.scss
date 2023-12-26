@@ -1,0 +1,132 @@
+
+.banner{
+    height: 670px;
+    background-color: black;
+    background-size: cover;
+    // background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 10;
+    width: 100%;
+    padding: 3rem;
+    background-position: center top;
+    box-sizing: border-box;
+
+
+    &:vertical-image {
+        background-position: center top; /* Center vertically and align to the top */
+    }
+
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black;
+        opacity: 0.4;
+        top: 0%;
+        left: 0%;
+    }
+    h1,p{
+        color: white;   
+        font-size: 4rem;
+        z-index: 10;
+        width: 50% ;
+    }
+    p{
+        font-size: 1.2rem;
+        width: 45%;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        font-weight:100;
+    }
+
+    >div{
+        display: flex;
+
+        button{
+            padding: 1rem;
+            width: 150px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            z-index: 10;
+            border-radius: 5px;
+            margin: 1rem;
+            background-color: white;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            &:hover{
+                opacity: 0.6;
+            }
+            &:nth-child(odd){
+                background-color: white;
+                color: black;
+            }
+            &:nth-child(even){
+                background-color: rgb(153, 143, 143);
+                color: white;
+            }
+
+            svg{
+                font-size: 1.7rem;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.row{
+    background-color: black;
+    padding: 1rem;
+    >h2{
+        font-weight: 400;
+        margin: 0.3rem;
+    }
+    >div{
+        display: flex;
+        overflow-x: auto;
+    }
+}
+
+.card{
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: 250px;
+    margin: 0.3rem;
+
+    &:hover{
+        transform: translateY(-10px) scale(1);
+    }
+}
+
+.genreBox{
+    overflow-x: auto;
+    display: flex;
+    background-color: black;
+    height: 100px;
+    >a{
+        color: black;
+        background-color: white;
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        transition: all 0.5s;
+        min-width: 8rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            background-color: rgb(214, 226, 237);
+        }
+    }
+}

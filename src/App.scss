@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+a,h2{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    height: 90px;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    
+    >img{
+        height: 100%;
+    }
+    >div{
+        width: 100%;
+        margin-left:4vmax;
+
+        >a{
+            font-size: 1.2rem;
+            margin: 1vmax;
+            font-weight: 300;
+        }
+    }
+
+    >svg{
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        
+        &:hover{
+           color: wheat; 
+        }
+    }
+}
+
